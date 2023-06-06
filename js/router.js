@@ -1,6 +1,6 @@
 import * as listeners from "./listeners/index.js";
 import buildMenu from "./ui/common/buildMenu.js";
-import { redirectBasedOnLogin } from "./helpers/auth.js";
+import { redirectBasedOnLogin } from "./helpers/auth/index.js";
 
 export default function router() {
 	const pathname = window.location.pathname;

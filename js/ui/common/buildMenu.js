@@ -1,4 +1,4 @@
-import { isLoggedIn, getName } from "../../helpers/storage.js";
+import { isLoggedIn, getName } from "../../helpers/storage/index.js";
 import * as listeners from "../../listeners/auth/index.js";
 
 export default function buildMenu(pathname) {

@@ -1,4 +1,4 @@
-import { isLoggedIn } from "./storage.js";
+import { isLoggedIn } from "../storage/index.js";
 
 export function redirectBasedOnLogin(pathname) {
 	if (isLoggedIn()) {
