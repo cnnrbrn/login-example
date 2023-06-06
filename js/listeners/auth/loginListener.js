@@ -1,5 +1,5 @@
 import displayMessage from "../../ui/common/displayMessage.js";
-import * as auth from "../../api/auth.js";
+import * as auth from "../../api/auth/index.js";
 import * as storage from "../../services/storage.js";
 
 export function loginListener() {

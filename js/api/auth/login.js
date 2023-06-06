@@ -1,4 +1,4 @@
-import { BASE_URL } from "../constants/api.js";
+import { BASE_URL } from "../../constants/api.js";
 
 export async function login(data) {
 	const url = `${BASE_URL}auth/login`;
