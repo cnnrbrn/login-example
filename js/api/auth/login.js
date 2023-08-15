@@ -13,9 +13,9 @@ export async function login(data) {
 
 	const response = await fetch(url, options);
 
-	if (!response.ok) {
-		throw new Error("Either the username or password is incorrect");
-	}
+	// if (!response.ok) {
+	// 	throw new Error("Either the username or password is incorrect");
+	// }
 
 	return await response.json();
 }
