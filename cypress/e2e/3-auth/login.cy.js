@@ -1,7 +1,7 @@
 describe("Login Page", () => {
 	it("Should contain Login and Register links, and after a successful login, redirect, not show these links on dashboard, and show logout button", () => {
 		// visit the login page
-		cy.visit("http://localhost:5500/auth/login.html");
+		cy.visit("http://localhost:8080/auth/login.html");
 
 		// Find the Login link in the menu
 		cy.get("#menu .nav-link").contains("Login").should("exist");
@@ -31,7 +31,7 @@ describe("Login Page", () => {
 
 	it("Should show an error message upon failed login attempt", () => {
 		// visit the login page
-		cy.visit("http://localhost:5500/auth/login.html"); // Replace 3000 with your port number
+		cy.visit("http://localhost:8080/auth/login.html"); // Replace 3000 with your port number
 
 		// Find the input field with id "username" and type the incorrect username
 		cy.get("#username").type("incorrectUsername");
